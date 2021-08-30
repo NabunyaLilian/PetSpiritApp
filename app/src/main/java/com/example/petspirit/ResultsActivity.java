@@ -1,5 +1,6 @@
 package com.example.petspirit;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +42,7 @@ public class ResultsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private void getIncomingIntent(){
         ArrayList<PetName> results;
         String resultHead;
