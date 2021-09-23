@@ -1,4 +1,4 @@
-package com.example.petspirit;
+package com.quiz.petspirit;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.petspirit", appContext.getPackageName());
+        assertEquals("com.quiz.petspirit", appContext.getPackageName());
     }
 }

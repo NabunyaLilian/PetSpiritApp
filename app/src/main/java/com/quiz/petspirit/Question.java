@@ -1,4 +1,4 @@
-package com.example.petspirit;
+package com.quiz.petspirit;
 
 public class Question {
     private String question;

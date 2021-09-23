@@ -1,255 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/questions_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/questionTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="377dp"
+        android:layout_height="34dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/textview"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/multiple"
-        android:fontFamily="sans-serif-light">
-
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="116dp"
-            android:text="@string/checkbox1"
-            android:textSize="18sp"
-            android:onClick="itemChecked"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="36dp"
-            android:text="@string/checkbox2"
-            android:textSize="18sp"
-            android:onClick="itemChecked"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/checkbox3"
-            android:textSize="18sp"
-            android:onClick="itemChecked"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
-
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="28dp"
-            android:onClick="itemChecked"
-            android:text="@string/checkbox4"
-            android:textSize="18sp"
-            android:typeface="sans"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/single"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-649dp"
-        tools:layout_editor_absoluteY="-62dp"
-        android:fontFamily="sans-serif-light">
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="114dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/button_bg_transparent"
-            android:gravity="start"
-            android:text="@string/button2"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:typeface="sans"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="114dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/button_bg_transparent"
-            android:gravity="start"
-            android:text="@string/button3"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:typeface="sans"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="114dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/button_bg_transparent"
-            android:gravity="start"
-            android:text="@string/button4"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:typeface="sans"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="114dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="120dp"
-            android:background="@drawable/button_bg_transparent"
-            android:gravity="start"
-            android:text="@string/button5"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:typeface="sans"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/scale"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="305dp"
-            android:layout_height="12dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="208dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:progress="50"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/label1"
-            android:layout_width="110dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="56dp"
-            android:layout_marginLeft="56dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:textSize="16dp"
-            android:text="@string/i_dislike_them"
-            app:layout_constraintEnd_toStartOf="@+id/label2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/seekBar" />
-
-        <TextView
-            android:id="@+id/label2"
-            android:layout_width="115dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginRight="48dp"
-            android:text="@string/i_so_love_them"
-            android:textSize="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/seekBar" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <Button
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="348dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/my_button_bg"
-        android:radius="20dp"
-        android:text="@string/Next"
-        android:textColor="#673AB7"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="377dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="28dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.555"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.988"
-            />
+        app:layout_constraintVertical_bias="0.988"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

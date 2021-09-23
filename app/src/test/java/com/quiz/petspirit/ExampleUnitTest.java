@@ -1,4 +1,4 @@
-package com.example.petspirit;
+package com.quiz.petspirit;
 
 import org.junit.Test;
 

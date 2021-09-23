@@ -1,4 +1,4 @@
-package com.example.petspirit;
+package com.quiz.petspirit;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
