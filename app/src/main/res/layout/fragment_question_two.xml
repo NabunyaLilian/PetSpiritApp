@@ -26,7 +26,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
-        android:onClick="itemChecked"
         android:text="@string/checkbox1"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +38,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:onClick="itemChecked"
         android:text="@string/checkbox2"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +50,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:onClick="itemChecked"
         android:text="@string/checkbox3"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,30 +62,67 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:onClick="itemChecked"
         android:text="@string/checkbox4"
         android:textSize="18sp"
         android:typeface="sans"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
-    <Button
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/my_button_bg"
-        android:radius="20dp"
-        android:text="@string/Next"
-        android:textColor="#673AB7"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox4"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/back_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+            android:focusable="true"
+            android:text="@string/back"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.7"
+            android:progress="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.988" />
+
+        <TextView
+            android:id="@+id/next_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:enabled="false"
+            android:focusable="true"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Pet Spirit</string>
     <string name="Next">Next</string>
     <string name="question">Question</string>
@@ -24,4 +24,10 @@
     <string name="puppy_icon">puppy icon</string>
     <string name="fish_icon">fish icon</string>
     <string name="bunny_icon">bunny icon</string>
+    <string name="finish">finish</string>
+    <string name="back">Back</string>
+    <string name="next">next</string>
+    <string name="which_food_do_you_like">Which food do you like ?</string>
+    <string name="steak">Steak</string>
+    <string name="fish">Fish</string>
 </resources>

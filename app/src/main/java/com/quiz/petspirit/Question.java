@@ -2,8 +2,8 @@ package com.quiz.petspirit;
 
 public class Question {
     private String question;
-    private QuestionType questionType;
-    private Answers[] answers;
+    public QuestionType questionType;
+    public Answers[] answers;
 
     public Question(String question, QuestionType questionType, Answers[] answers) {
         this.question = question;

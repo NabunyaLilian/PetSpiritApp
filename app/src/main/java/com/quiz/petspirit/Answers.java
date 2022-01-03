@@ -3,7 +3,7 @@ package com.quiz.petspirit;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Answers implements Parcelable{
+public class Answers implements Parcelable {
     private String answer;
     private PetName pet;
 
@@ -13,10 +13,12 @@ public class Answers implements Parcelable{
         this.pet = pet;
     }
 
+
     protected Answers(Parcel in) {
         answer = in.readString();
         pet = in.readParcelable(PetName.class.getClassLoader());
     }
+
 
     public static final Creator<Answers> CREATOR = new Creator<Answers>() {
         @Override
