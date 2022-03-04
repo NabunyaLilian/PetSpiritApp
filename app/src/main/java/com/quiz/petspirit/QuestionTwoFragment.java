@@ -72,7 +72,7 @@ public class QuestionTwoFragment extends Fragment {
 
 
     private void setUpUI() {
-        title.setText(questionViewModel.question.get(1).getQuestion());
+        title.setText(questionViewModel.question.get(1).getTitle());
         checkBox.setText(questionViewModel.question.get(1).getAnswers()[0].getAnswer());
         checkBox2.setText(questionViewModel.question.get(1).getAnswers()[1].getAnswer());
         checkBox3.setText(questionViewModel.question.get(1).getAnswers()[2].getAnswer());
@@ -123,13 +123,13 @@ public class QuestionTwoFragment extends Fragment {
         next_btn.setOnClickListener(
                 view1 -> {
                     questionViewModel.chosenAnswers.add(answer);
-                    Navigation.findNavController(view1).navigate(R.id.questionThreeFragment);
+                    //Navigation.findNavController(view1).navigate(R.id.quizFragment);
                 }
         );
 
         back_btn.setOnClickListener(
                 view12 -> {
-                    Navigation.findNavController(view12).popBackStack();
+                    //Navigation.findNavController(view12).popBackStack();
                 }
         );
     }

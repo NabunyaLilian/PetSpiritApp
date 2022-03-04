@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/findout_your_pet_spirit"
+        android:text="Find your Pet"
         android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold"

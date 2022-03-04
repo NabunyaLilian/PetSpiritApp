@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Answers implements Parcelable {
-    private String answer;
-    private PetName pet;
+    private final String answer;
+    private final PetName pet;
 
 
     public Answers(String answer, PetName pet) {
@@ -56,6 +56,7 @@ enum PetName implements Parcelable {
     CAT,
     DOG,
     FISH,
+    BIRD,
     BUNNY;
 
 

@@ -72,7 +72,7 @@ public class QuestionOneFragment extends Fragment {
 
 
     public void setUpUI() {
-        title.setText(questionViewModel.question.get(0).getQuestion());
+        title.setText(questionViewModel.question.get(0).getTitle());
         button1.setText(questionViewModel.question.get(0).getAnswers()[0].getAnswer());
         button2.setText(questionViewModel.question.get(0).getAnswers()[1].getAnswer());
         button3.setText(questionViewModel.question.get(0).getAnswers()[2].getAnswer());
@@ -84,7 +84,7 @@ public class QuestionOneFragment extends Fragment {
         next_btn.setOnClickListener(
                 view12 -> {
                     questionViewModel.chosenAnswers.add(answer);
-                    Navigation.findNavController(view12).navigate(R.id.questionTwoFragment);
+                    //Navigation.findNavController(view12).navigate(R.id.questionTwoFragment);
                 }
         );
     }

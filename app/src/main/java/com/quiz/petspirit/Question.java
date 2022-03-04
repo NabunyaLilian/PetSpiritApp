@@ -1,18 +1,18 @@
 package com.quiz.petspirit;
 
 public class Question {
-    private String question;
+    private final String title;
     public QuestionType questionType;
     public Answers[] answers;
 
     public Question(String question, QuestionType questionType, Answers[] answers) {
-        this.question = question;
+        this.title = question;
         this.questionType = questionType;
         this.answers = answers;
     }
 
-    public String getQuestion() {
-        return question;
+    public String getTitle() {
+        return title;
     }
 
     public QuestionType getQuestionType() {

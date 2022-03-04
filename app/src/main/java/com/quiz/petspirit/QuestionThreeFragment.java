@@ -48,7 +48,7 @@ public class QuestionThreeFragment extends Fragment {
         title = view.findViewById(R.id.questionTitle);
 
 
-        title.setText(questionViewModel.question.get(2).getQuestion());
+        title.setText(questionViewModel.question.get(2).getTitle());
 
         if (answer != null) {
             questionViewModel.chosenAnswers.remove(2);
@@ -111,7 +111,7 @@ public class QuestionThreeFragment extends Fragment {
 
         back_btn.setOnClickListener(
                 view12 -> {
-                    Navigation.findNavController(view12).popBackStack();
+                    //Navigation.findNavController(view12).popBackStack();
                 }
         );
     }

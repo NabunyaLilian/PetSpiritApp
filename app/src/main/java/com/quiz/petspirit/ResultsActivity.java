@@ -47,16 +47,16 @@ public class ResultsActivity extends AppCompatActivity {
         ArrayList<PetName> results;
         String resultHead;
         String resultBody;
+        int cat_counter=0, dog_counter=0, bunny_counter=0, fish_counter=0, bird_counter=0 ;
 
         Intent intent = getIntent();
         results = intent.getParcelableArrayListExtra("results");
 
         for (int i = 0; i < results.size(); i++) {
-            for (int j = i + 1; j < results.size(); j++) {
-                if (results.get(i).equals(results.get(j))) {
-                    switch (results.get(j)) {
+                    switch (results.get(i)) {
                         case CAT:
-                            resultHead = "You are " + results.get(j);
+                            cat_counter++;
+                            resultHead = "You are " + results.get(i);
                             resultBody = "You are adorable, you like to have your own space and you're also social at your pace";
                             title.setText(resultHead);
                             content.setText(resultBody);
@@ -64,7 +64,8 @@ public class ResultsActivity extends AppCompatActivity {
                             break;
 
                         case DOG:
-                            resultHead = "You are " + results.get(j);
+                            dog_counter++;
+                            resultHead = "You are " + results.get(i);
                             resultBody = "You are team player, enthusiatic and a loving person. You like to be participate in fun games too. Finding a dog as your pet will fulfill your authentic self.";
                             title.setText(resultHead);
                             content.setText(resultBody);
@@ -72,7 +73,8 @@ public class ResultsActivity extends AppCompatActivity {
                             break;
 
                         case FISH:
-                            resultHead = "You are " + results.get(j);
+                            fish_counter++;
+                            resultHead = "You are " + results.get(i);
                             resultBody = "You are an analytic person who takes their time to focus and do things they want";
                             title.setText(resultHead);
                             content.setText(resultBody);
@@ -80,7 +82,17 @@ public class ResultsActivity extends AppCompatActivity {
                             break;
 
                         case BUNNY:
-                            resultHead = "You are " + results.get(j);
+                            bunny_counter++;
+                            resultHead = "You are " + results.get(i);
+                            resultBody = "You are funny, playful and have a teenage mind. Which is a great feature to possess.";
+                            title.setText(resultHead);
+                            content.setText(resultBody);
+                            image.setImageDrawable(getResources().getDrawable(R.drawable.rabbit_icon));
+                            break;
+
+                        case BIRD:
+                            bird_counter++;
+                            resultHead = "You are " + results.get(i);
                             resultBody = "You are funny, playful and have a teenage mind. Which is a great feature to possess.";
                             title.setText(resultHead);
                             content.setText(resultBody);
@@ -88,8 +100,6 @@ public class ResultsActivity extends AppCompatActivity {
                             break;
                     }
                 }
-            }
-        }
     }
 
 }

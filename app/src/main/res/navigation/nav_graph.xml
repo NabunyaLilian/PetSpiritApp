@@ -2,33 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/questionOneFragment">
+    app:startDestination="@id/quizFragment">
 
     <fragment
-        android:id="@+id/questionOneFragment"
-        android:name="com.quiz.petspirit.QuestionOneFragment"
-        android:label="QuestionOneFragment" >
-        <action
-            android:id="@+id/action_questionOneFragment_to_questionTwoFragment"
-            app:destination="@id/questionTwoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/questionThreeFragment"
-        android:name="com.quiz.petspirit.QuestionThreeFragment"
-        android:label="QuestionThreeFragment" >
-        <action
-            android:id="@+id/action_questionThreeFragment_to_questionTwoFragment"
-            app:destination="@id/questionTwoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/questionTwoFragment"
-        android:name="com.quiz.petspirit.QuestionTwoFragment"
-        android:label="QuestionTwoFragment" >
-        <action
-            android:id="@+id/action_questionTwoFragment_to_questionThreeFragment"
-            app:destination="@id/questionThreeFragment" />
-        <action
-            android:id="@+id/action_questionTwoFragment_to_questionOneFragment"
-            app:destination="@id/questionOneFragment" />
-    </fragment>
+        android:id="@+id/quizFragment"
+        android:name="com.quiz.petspirit.QuizFragment"
+        android:label="QuizFragment" />
 </navigation>
