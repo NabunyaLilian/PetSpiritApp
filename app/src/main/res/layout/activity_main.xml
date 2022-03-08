@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_img4"
     tools:context=".MainActivity">
 
 
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Find your Pet"
+        android:text="Find your Pet!"
         android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold"

@@ -45,7 +45,13 @@ public class QuizFragment extends Fragment {
         Button next_btn = view.findViewById(R.id.next_btn);
         next_btn.setOnClickListener(view1 -> {
             if(pos < 10){
-             initialiseQuizQuestions();
+                radioGroup.clearCheck();
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                initialiseQuizQuestions();
              questionViewModel.chosenAnswers.add(answer);
                 Log.d("TAG", "onViewCreated: "+ questionViewModel.chosenAnswers);
             }
@@ -60,7 +66,6 @@ public class QuizFragment extends Fragment {
     }
 
     public void initialiseQuizQuestions(){
-        radioGroup.clearCheck();
         title.setText(questionViewModel.question.get(pos).getTitle());
         for(int i=0; i< radioGroup.getChildCount(); i++){
             ((RadioButton)radioGroup.getChildAt(i)).setText(questionViewModel.question.get(pos).getAnswers()[i].getAnswer());

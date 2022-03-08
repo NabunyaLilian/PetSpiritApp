@@ -7,10 +7,11 @@
     <color name="purple_2">#673AB7</color>
     <color name="purple_3">#7E57C2</color>
     <color name="white">#FFFFFF</color>
-    <color name="white_2">#F9f9F9</color>
+    <color name="white_2">#F8F9FE</color>
     <color name="black">#000000</color>
     <color name="orange_1">#FFB74D</color>
     <color name="orange_2">#FFCC80</color>
     <color name="orange_3">#FFCC80</color>
     <color name="black_2">#202021</color>
+    <color name="gray">#D8D8D8</color>
 </resources>
