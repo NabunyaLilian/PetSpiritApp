@@ -15,7 +15,6 @@
     <string name="take_quiz_again">TAKE QUIZ AGAIN</string>
     <string name="i_dislike_them">I dislike them</string>
     <string name="i_so_love_them">I so love them</string>
-    <string name="when_you_have_the_hawk_as_a_spirit_animal_you_may_have_an_inclination_towards_using_the_power_of_vision_and_intuition_in_your_daily_life_the_hawk_totem_provides_wisdom_about_seeing_situations_from_a_higher_perspective_using_the_power_of_observation_and_focusing_on_the_task_at_hand_it_s_a_good_companion_to_develop_spiritual_awareness">When you have the hawk as a spirit animal, you may have an inclination towards using the power of vision and intuition in your daily life.</string>
     <string name="you_are_a_hawk">You are a Hawk</string>
     <string name="textview">TextView</string>
     <string name="findout_your_pet_spirit">Findout your Pet Spirit</string>
@@ -29,5 +28,17 @@
     <string name="next">next</string>
     <string name="which_food_do_you_like">Which food do you like ?</string>
     <string name="steak">Steak</string>
+    <string name="why_do_you_want_a_pet">Why do you want a pet?</string>
+    <string name="i_m_longing_to_care_for_a_pint_sized_companion">I\'m longing to care for a pint-sized companion</string>
+    <string name="i_d_like_a_pet_just_like_me_chirpy_and_quirky">I\'d like a pet just like me:chirpy and quirky</string>
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
     <string name="fish">Fish</string>
+    <string name="bird">Bird</string>
+    <string name="bunny">Small Pets and Reptiles</string>
+    <string name="dog_result">"You sound like a dog person! Dogs require daily exercise, plenty of playtime, and consistent training to live their happiest, healthiest lives. To find your perfect match, be sure to carefully research breeds before choosing a dog. Breeds can vary widely in terms of personality, exercise requirements and grooming needs. You’ll also want to consider your ideal dog’s age. Do you have the energy to keep up with a bouncing puppy? If not, consider adopting an older dog. Additionally, be aware of your budget. Between supplies, grooming and veterinary bills, dogs are among the most expensive pets."</string>
+    <string name="cat_result">"Congrats! Cats are some of the best pets around. Cats are social companions, naturally tidy and relatively easy to train (most kittens will instinctively use the litter box). However, despite what you may have heard, cats are not low-maintenance pets. Like their canine counterparts, cats require daily playtime, plenty of mental stimulation and regular veterinary care. Cats can also experience separation anxiety, so make sure your schedule allows for ample time with your new pet."</string>
+    <string name="fish_result">"So you’d like a pet, but perhaps not the walks, noise, grooming and messes. Have you considered fish? Fish offer a calming connection to the natural world without many of the commitments that come along with other animals. As a responsible pet parent, it’s still important to do your research before purchasing fish. Different species require different environments, and not all fish are compatible roommates. If you’re new to fish, consider a freshwater aquarium and species that are easier to care for, such as goldfish, zebra fish or neon tetras."</string>
+    <string name="bunny_result">"Small furry friends, such as rabbits, hamsters, mice and guinea pigs, can offer a lot of love in a tiny package. And if you prefer scales to fur, the same goes for reptiles like geckos and bearded dragons. As fans of these species will tell you, these little guys have big personalities, and they’re relatively easy to care for on a daily basis. Just keep in mind that there’s no such thing as a “starter pet.” Small pets still require socialization, engaging habitats and daily care. Parents, especially, should use caution: Due to the risk of salmonella infection, children under 5 should not handle reptiles, amphibians or mice. If you have kids, consider these 7 best small animal pets for children instead."</string>
+    <string name="bird_result">"If you’re looking for a fun, charming, dynamic companion, make a bird your new BFF. While all birds need socialization, mental stimulation and veterinary care, some species—such as conures and African greys—are extremely smart and require the specialized care of an experienced, dedicated owner. Plus, some species of parrots, including most macaws, can live upwards of 60 years in captivity. If you’re new to birds, consider a more “beginner-friendly” pet such as a budgie, canary or finch."</string>
 </resources>

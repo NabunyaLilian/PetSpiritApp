@@ -4,28 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity{
-    private Button button;
+import com.quiz.petspirit.quiz.QuizActivity;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchActivity();
-            }
-        });
-
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(view -> launchActivity());
     }
 
-    private void launchActivity(){
-        Intent intent = new Intent(this, QuestionsActivity.class);
+    private void launchActivity() {
+        Intent intent = new Intent(this, QuizActivity.class);
         startActivity(intent);
     }
 }

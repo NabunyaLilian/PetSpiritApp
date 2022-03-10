@@ -1,4 +1,4 @@
-package com.quiz.petspirit;
+package com.quiz.petspirit.quiz.models;
 
 public class Question {
     private final String title;
@@ -24,8 +24,3 @@ public class Question {
     }
 }
 
-enum QuestionType{
-    MULTIPLE,
-    SINGLE,
-    RANGE
-}

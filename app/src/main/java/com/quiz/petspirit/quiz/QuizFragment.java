@@ -1,9 +1,8 @@
-package com.quiz.petspirit;
+package com.quiz.petspirit.quiz;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,13 +17,19 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.quiz.petspirit.R;
+import com.quiz.petspirit.quiz.models.Answers;
+import com.quiz.petspirit.quiz.models.PetName;
+import com.quiz.petspirit.quiz.viewmodels.QuizViewModel;
+
 
 public class QuizFragment extends Fragment {
-    private QuestionViewModel questionViewModel;
-    int pos = 3;
+    private QuizViewModel questionViewModel;
+    int pos = 0;
     RadioGroup radioGroup;
     TextView title;
     PetName answer;
+    Button next_btn;
 
     @Nullable
     @Override
@@ -38,75 +43,77 @@ public class QuizFragment extends Fragment {
 
         radioGroup = view.findViewById(R.id.radio_grp);
         title = view.findViewById(R.id.questionTitle);
+        next_btn = view.findViewById(R.id.next_btn);
 
-        questionViewModel = new ViewModelProvider(requireActivity()).get(QuestionViewModel.class);
+        questionViewModel = new ViewModelProvider(requireActivity()).get(QuizViewModel.class);
         questionViewModel.initialiseQuestions();
-        initialiseQuizQuestions();
-        Button next_btn = view.findViewById(R.id.next_btn);
+
+        setUpUI();
+        setObservers();
+        onClickBtn();
+    }
+
+    public void setUpUI() {
+        //update UI with new questions
+        title.setText(questionViewModel.question.get(pos).getTitle());
+        for (int i = 0; i < radioGroup.getChildCount(); i++) {
+            ((RadioButton) radioGroup.getChildAt(i)).setText(questionViewModel.question.get(pos).getAnswers()[i].getAnswer());
+        }
+        onRadioButtonClick();
+        pos++;
+    }
+
+    public void onClickBtn(){
+        //on click next button
         next_btn.setOnClickListener(view1 -> {
-            if(pos < 10){
+            if (pos < 7) {
+                questionViewModel.chosenAnswers.add(answer);
                 radioGroup.clearCheck();
+
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(500);
+                    setUpUI();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                initialiseQuizQuestions();
-             questionViewModel.chosenAnswers.add(answer);
-                Log.d("TAG", "onViewCreated: "+ questionViewModel.chosenAnswers);
-            }
-            else {
+
+            } else {
                 Intent i = new Intent(getActivity(), ResultsActivity.class);
                 i.putParcelableArrayListExtra("results", questionViewModel.chosenAnswers);
                 startActivity(i);
             }
         });
-
-        setObservers();
     }
 
-    public void initialiseQuizQuestions(){
-        title.setText(questionViewModel.question.get(pos).getTitle());
-        for(int i=0; i< radioGroup.getChildCount(); i++){
-            ((RadioButton)radioGroup.getChildAt(i)).setText(questionViewModel.question.get(pos).getAnswers()[i].getAnswer());
-        }
-        onRadioButtonClick();
-        pos++;
-    }
 
     @SuppressLint("NonConstantResourceId")
     public void onRadioButtonClick() {
         // Is the button now checked?
         Answers[] currentAnswers = questionViewModel.question.get(pos).getAnswers();
         radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
-            switch(checkedId) {
+            switch (checkedId) {
                 case R.id.radio_btn1:
-                        questionViewModel.getPetName().setValue(currentAnswers[0].getPet());
-                        break;
+                    questionViewModel.getPetName().setValue(currentAnswers[0].getPet());
+                    break;
                 case R.id.radio_btn2:
-                        questionViewModel.getPetName().setValue(currentAnswers[1].getPet());
-                        break;
+                    questionViewModel.getPetName().setValue(currentAnswers[1].getPet());
+                    break;
                 case R.id.radio_btn3:
-                        questionViewModel.getPetName().setValue(currentAnswers[2].getPet());
-                        break;
+                    questionViewModel.getPetName().setValue(currentAnswers[2].getPet());
+                    break;
                 case R.id.radio_btn4:
-                        questionViewModel.getPetName().setValue(currentAnswers[3].getPet());
-                        break;
+                    questionViewModel.getPetName().setValue(currentAnswers[3].getPet());
+                    break;
                 case R.id.radio_btn5:
-                        questionViewModel.getPetName().setValue(currentAnswers[4].getPet());
-                        break;
+                    questionViewModel.getPetName().setValue(currentAnswers[4].getPet());
+                    break;
 
             }
         });
     }
 
     public void setObservers() {
-        final Observer<PetName> buttonObserver = new Observer<PetName>() {
-            @Override
-            public void onChanged(@Nullable final PetName petName) {
-                answer = petName;
-            }
-        };
+        final Observer<PetName> buttonObserver = petName -> answer = petName;
 
         questionViewModel.getPetName().observe(getViewLifecycleOwner(), buttonObserver);
     }

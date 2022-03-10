@@ -13,7 +13,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:gravity="center_horizontal"
-        android:text="Why do you want a pet?"
+        android:text="@string/why_do_you_want_a_pet"
         android:textColor="@color/black_2"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -38,9 +38,9 @@
             android:layout_height="60dp"
             android:background="@drawable/radio_bg"
             android:padding="10dp"
-            android:text="I'm longing to care for a pint-sized companion"
+            android:text="@string/i_m_longing_to_care_for_a_pint_sized_companion"
             android:textColor="@color/black_2"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radio_btn2"
@@ -49,9 +49,9 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/radio_bg"
             android:padding="10dp"
-            android:text="I'd like a pet just like me:chirpy and quirky"
+            android:text="@string/i_d_like_a_pet_just_like_me_chirpy_and_quirky"
             android:textColor="@color/black_2"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radio_btn3"
@@ -60,9 +60,9 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/radio_bg"
             android:padding="10dp"
-            android:text="I'm longing to care for a pint-sized companion"
+            android:text="@string/i_m_longing_to_care_for_a_pint_sized_companion"
             android:textColor="@color/black_2"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radio_btn4"
@@ -71,9 +71,9 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/radio_bg"
             android:padding="10dp"
-            android:text="I'd like a pet just like me:chirpy and quirky"
+            android:text="@string/i_d_like_a_pet_just_like_me_chirpy_and_quirky"
             android:textColor="@color/black_2"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radio_btn5"
@@ -82,9 +82,9 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/radio_bg"
             android:padding="10dp"
-            android:text="I'd like a pet just like me:chirpy and quirky"
+            android:text="@string/i_m_longing_to_care_for_a_pint_sized_companion"
             android:textColor="@color/black_2"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
     </RadioGroup>
 
     <Button
@@ -95,7 +95,7 @@
         android:background="@drawable/my_button_bg"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
