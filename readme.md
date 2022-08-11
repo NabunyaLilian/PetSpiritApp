@@ -1,16 +1,7 @@
 # Pet Spirit
-The purpose of this app is to compare human beings with their spirit pets. This is achieved through 
-a criteria taken to measure a person's habits/behaviour with a pet that portrays the same behaviour.
+Pet Spirit app has developed a smart survey that matches people and pets based on compatibility. Questions relating to energy, confidence, focus, and independence,
+The quiz assesses your personality, lifestyle and home as it relates to pet parenting.
 
-## Screenshots
-### Main View
-<img src="images/mainview.png"  height="750" width="400"/>
-
-### Questions View
-<img src="images/questionview.png"  height="750" width="400"/>
-
-### Results View
-<img src="images/resultsview.png"  height="750" width="400"/>
 
 ## Getting Started 
 These instructions will get you a copy of the project up and running on your local machine for
@@ -33,4 +24,4 @@ Follow these simple steps to get you started;
 - Android/Java
 
 ## Versioning
-This is the 1 st version
+This is the 2 st version
