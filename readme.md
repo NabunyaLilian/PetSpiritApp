@@ -16,7 +16,7 @@ These are the things you need to install the software and how to install them
 ### Installing
 Follow these simple steps to get you started;
 - Open Android studio
-- `git clone https://github.com/NabunyaLilian/RecyclerViewProject.git`
+- `https://github.com/NabunyaLilian/PetSpiritApp.git`
 - `git checkout develop`
 - Run App
 
@@ -24,4 +24,4 @@ Follow these simple steps to get you started;
 - Android/Java
 
 ## Versioning
-This is the 2 st version
+This is the 2nd version
