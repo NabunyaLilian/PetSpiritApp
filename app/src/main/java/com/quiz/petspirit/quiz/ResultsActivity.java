@@ -2,6 +2,7 @@ package com.quiz.petspirit.quiz;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,6 +21,7 @@ public class ResultsActivity extends AppCompatActivity {
     private TextView title;
     private TextView content;
     Button btn;
+    Button next_btn;
     ImageView image;
     int cat_counter = 0, dog_counter = 0, bunny_counter = 0, fish_counter = 0, bird_counter = 0;
 
@@ -30,6 +32,7 @@ public class ResultsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_results);
 
         btn = findViewById(R.id.back);
+        next_btn = findViewById(R.id.next_btn);
         title = findViewById(R.id.title);
         content = findViewById(R.id.content);
         image = findViewById(R.id.result_image);
@@ -39,8 +42,17 @@ public class ResultsActivity extends AppCompatActivity {
 
         btn.setOnClickListener(view -> returnToFirstPage());
 
+        handleNextButton();
         getIncomingIntent();
         updateUI();
+    }
+
+    private void handleNextButton(){
+        next_btn.setOnClickListener(view->{
+            Uri uri = Uri.parse("https://www.google.com/search?q=nearby+pet+stores&oq=nearby+pet+stores&aqs=chrome..69i57j0i512l2j0i22i30l7.5350j0j1&sourceid=chrome&ie=UTF-8");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
     }
 
     private void returnToFirstPage() {
