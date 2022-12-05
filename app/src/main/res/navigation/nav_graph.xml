@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.quiz.petspirit.quiz.QuizFragment"
+        android:name="com.quiz.spirit.quiz.QuizFragment"
         android:label="QuizFragment" />
 </navigation>

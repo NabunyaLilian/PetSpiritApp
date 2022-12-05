@@ -1,27 +1,33 @@
 # Pet Spirit
-Pet Spirit app has developed a smart survey that matches people and pets based on compatibility. Questions relating to energy, confidence, focus, and independence,
+An android app that helps you find out your best pet. It uses a smart survey that matches people and pets based on compatibility. Questions relating to energy, confidence, focus, and independence,
 The quiz assesses your personality, lifestyle and home as it relates to pet parenting.
 
+### Phone Display:
 
-## Getting Started 
-These instructions will get you a copy of the project up and running on your local machine for
-development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+<img src="images/step 1.png" width="250px" alt="screen 1"> <img src="images/step 2.png" width="250px" alt="screen 1"> <img src="images/step 3.png" width="250px" alt="screen 1">
 
-### Prerequisites
-These are the things you need to install the software and how to install them
-- Android studio
-- JDK installed
-- Fast Machine
+### Tablet Display
+<img src="images/1.png" width="250px" alt="screen 1"> <img src="images/2.png" width="250px" alt="screen 1"> <img src="images/3.png" width="250px" alt="screen 1">
 
-### Installing
-Follow these simple steps to get you started;
-- Open Android studio
-- `https://github.com/NabunyaLilian/PetSpiritApp.git`
-- `git checkout develop`
-- Run App
+## App Architecture
+- MVVM
+- Java
 
-## Built With
-- Android/Java
+## Developed By
+Nabunya Lilian
 
-## Versioning
-This is the 2nd version
+Copyright [2022] [Nabunya Lilian]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+

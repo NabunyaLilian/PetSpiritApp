@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quiz.petspirit">
+    package="com.quiz.spirit">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreen"
+            android:name="com.quiz.spirit.SplashScreen"
             android:exported="true"
             android:theme="@style/splashTheme">
             <intent-filter>
@@ -20,13 +20,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.quiz.spirit.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".quiz.QuizActivity"
+            android:name="com.quiz.spirit.quiz.QuizActivity"
             android:label="Quiz" />
         <activity
-            android:name=".quiz.ResultsActivity"
+            android:name="com.quiz.spirit.quiz.ResultsActivity"
             android:label="Results" />
     </application>
 
